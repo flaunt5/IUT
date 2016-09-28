@@ -1,0 +1,190 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, select {
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}
+
+html, body, form, fieldset, legend, ul, ol, pre, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: -200px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 75%;
+    text-align: center;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px #888;
+    color: #000;
+}
+
+a {
+    color: #ffff38;
+    text-decoration: none;
+}
+
+.nav {
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.nav-item {
+    padding: 10px;
+    background-color: #666;
+    margin: 3px;
+}
+
+#sidebar {
+    display: table-cell;
+    vertical-align: middle;
+    width: 120px;
+    height: 400px;
+    background: rgb(5, 171, 224);
+    background: -moz-linear-gradient(-90deg, rgba(5, 171, 224, 1) 0%, rgba(83, 203, 241, 0.5) 60%, rgba(135, 224, 253, 0.2) 100%);
+    background: -webkit-linear-gradient(-90deg, rgba(5, 171, 224, 1) 0%, rgba(83, 203, 241, 0.5) 60%, rgba(135, 224, 253, 0.2) 100%);
+    background: linear-gradient(180deg, rgba(5, 171, 224, 1) 0%, rgba(83, 203, 241, 0.5) 60%, rgba(135, 224, 253, 0.2) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#87e0fd', GradientType=1);
+    color: #fff;
+}
+
+#logo {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 30px
+}
+
+#the_logo {
+    width: 60px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 680px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+#content-admin {
+    display: table-cell;
+    vertical-align: middle;
+    width: 680px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+#content1, #content2 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 340px;
+    text-align: center;
+}
+
+table#peintres {
+    text-align: center;
+    margin: 0 auto;
+}
+
+table#peintres caption {
+    border: 2px solid #333;
+    padding: 4px 10px;
+}
+
+table#peintres th {
+    background: #a8c9c9;
+    color: #333;
+    height: 1.5em;
+    font-size: 120%;
+}
+
+table#peintres tr:hover {
+    background-color: #adc2a7;
+}
+
+table#peintres tr:nth-child(even) {
+    background-color: #d0e9e9;
+}
+
+table#peintres tr:nth-child(odd) {
+    background-color: #b7dadb;
+}
+
+table#peintres th, td {
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+form.form fieldset {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form.form fieldset legend {
+    padding: 5px 10px;
+    margin: 4px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    border: solid 1px #8e44ad;
+    background-color: #9b59b6;
+    border-radius: 20px;
+}
+
+form.form input, .input label {
+    display: inline-block;
+    vertical-align: middle;
+}
+form.form input {
+  width: 100px;
+}
+.input label {
+  width: 50px;
+}
+
+.admin-hidden {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.admin-hidden a {
+    color: rgba(0, 0, 0, 0);
+}
