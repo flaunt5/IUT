@@ -1,4 +1,4 @@
-<nav class="footer-nav">
+<nav class="menu footer-nav">
   <ul>
     <li>
       <a href="#" rel="author">Qui sommes-nous?</a>

@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link href="//db.onlinewebfonts.com/c/de2667f342f093d9526e2b71283629b2?family=Hobo+Std" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="./css/style_main.css" />
   </head>
   <body>
     <div id="header" class="head">
       <div id="header-inner">
-        <div id="header-ad" class="ad">
+        <div id="ad">
+          Votre Publicité Ici
         </div>
       </div>
       <nav class="menu header">
@@ -18,7 +21,7 @@
     <aside class="sidebar left">
       <?php include "sidebar_left.php";?>
     </aside>
-    <main class="content">
+    <main id="content">
       <section>
         <h1 class="text-header">Bienvenue</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin turpis id magna venenatis ullamcorper. Nulla ut gravida orci. Donec maximus lacus diam, eget posuere est pretium at. Sed feugiat vitae justo quis tempus. Integer rhoncus laoreet dignissim. Suspendisse tincidunt faucibus nisi. Curabitur tortor nibh, tincidunt ac aliquam eget, placerat ac libero. In sed dui volutpat, dictum nisl sed, lobortis dolor.
@@ -28,7 +31,8 @@
     <aside class="sidebar right">
       <?php include "sidebar_right.php";?>
     </aside>
-    <footer>
+    <div class="clear"></div>
+    <footer id="footer">
       <?php include "footer.php";?>
     </footer>
     <script async="true" type="text/javascript" src="./js/scripts.js" />

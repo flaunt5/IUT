@@ -1,3 +1,98 @@
-body {
+@import url(//db.onlinewebfonts.com/c/de2667f342f093d9526e2b71283629b2?family=Hobo+Std);
+@font-face {font-family: "Hobo Std";
+    src: url("//db.onlinewebfonts.com/t/de2667f342f093d9526e2b71283629b2.eot");
+    src: url("//db.onlinewebfonts.com/t/de2667f342f093d9526e2b71283629b2.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/de2667f342f093d9526e2b71283629b2.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/de2667f342f093d9526e2b71283629b2.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/de2667f342f093d9526e2b71283629b2.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/de2667f342f093d9526e2b71283629b2.svg#Hobo Std") format("svg");
+}
+html {
   font-family: "Tahoma", sans-serif;
+  width: 800px;
+}
+#header {
+  width: 100%;
+}
+div#header-inner {
+  height: 100px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-color: #C7D9F1;
+}
+div#ad {
+  background-color: #008083;
+  border: solid 3px #99CDC9;
+  height: auto;
+  font-family: "Hobo Std", sans-serif;
+  color: #99CDC9;
+  font-size: 3em;
+  padding: 8px;
+  text-align: center;
+  width: 75%;
+  float: right;
+  margin: 7px 7px 0 0;
+}
+nav.menu {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+nav.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav.menu ul * {
+  background: #fff;
+  display: inline;
+  color: #008083;
+
+}
+nav.menu a {
+  text-decoration: none;
+  color: #008083;
+}
+nav.menu.header {
+  background-color: #99CDC9;
+}
+main#content {
+  margin: 0 auto;
+  width: 48%;
+  display: inline-block;
+  text-align: justify;
+  padding: 0 3px;
+}
+.sidebar {
+  width: 24%;
+  display: inline-block;
+  text-align: justify;
+  padding: 0 3px;
+}
+.sidebar.left {
+  float: left;
+}
+.sidebar.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+#footer {
+  border-top: 1px solid #99CDC9;
+  color: #99CDC9;
+  padding-top: 4px;
+  margin-top: 5px;
+}
+#footer a {
+  color: #99CDC9;
+  text-decoration: none;
+}
+.footer-nav li {
+  border-right: solid 1px #99CDC9;
+  margin: 4px auto;
+  padding: 1px 10px;
+}
+.footer-nav li:last-child {
+  border-right: none;
 }
