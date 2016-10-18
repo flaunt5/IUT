@@ -56,6 +56,21 @@ nav.menu a {
 nav.menu.header {
   background-color: #99CDC9;
 }
+ul.menu.child {
+  position: absolute;
+  display: none;
+}
+ul.menu.child li {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 15px;
+}
+ul.menu *:hover ul.menu.child, ul.menu.child:hover, ul.menu.child *:hover {
+  display: block;
+}
+
 main#content {
   margin: 0 auto;
   width: 48%;
