@@ -1,0 +1,54 @@
+/* Formulaire */
+fieldset
+{
+width: 23em;
+margin: 20px auto;
+text-align: center;
+border: 1px solid #008080;
+border-radius: 15px;
+}
+
+label
+{
+display: inline-block;
+width: 6em;
+color: #008080;
+font-weight: bold;
+text-align: right;
+padding-right: 5px;
+}
+
+fieldset p
+{
+text-align: left;
+}
+
+/* <input> */
+#tel, #mob
+{
+width: 110px;
+}
+
+input
+{
+margin: 0;
+color: #008080;
+font-weight: bold;
+}
+
+input[type="submit"]
+{
+background-color: #008080;
+color: #fff;
+border: 1px solid #008080;
+border-radius: 15px;
+}
+
+input[type="submit"]:hover
+{
+background-color: #c6d9f1;
+color: #008080;
+transition-property: background-color, color;
+transition-duration: 0.5s;
+transition-timing-function: ease-in;
+}
