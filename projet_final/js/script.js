@@ -40,30 +40,44 @@ if(document.querySelector("#contact-form") != null) {
         }
     });
 }
+document.querySelector("#logo").addEventListener("click", function (e) {
+   e.preventDefault();
 
-function warningToggle(val) {
-    document.querySelector("#warning-bg").style.display = val;
+    window.location.href = "index.html";
+});
+
+if(document.querySelector("#warningToggle") != null) {
+    document.querySelector("#warningToggle").addEventListener("click", function(e) {
+        document.querySelector("#warning-bg").style.display = "none";
+    });
 }
 
-function windowChange(theUrl) {
-    window.location.href = theUrl;
+if(document.querySelector("#contact-form") != null) {
+    document.querySelector(".img-produit").addEventListener("click", function(e) {
+        window.location.href = this.getAttribute('data-url');
+    });
+
 }
 
-if(document.querySelector("#cart-contain") != null) {
-    document.querySelector("#cart-contain").style.display = "none";
-}
-
-function purchase(price) {
-    var cart = document.querySelector("#cart-contain");
-    var totalPrice = parseInt(document.querySelector("#cart-total").innerHTML, 10);
-    console.log(totalPrice)
-
-    if (cart.style.display == "none") {
-        cart.style.display = "inline-block";
+if(document.querySelector("#contact-form") != null) {
+    if(document.querySelector("#cart-contain") != null) {
+        document.querySelector("#cart-contain").style.display = "none";
     }
-    totalPrice = totalPrice + price;
-    console.log("called " + totalPrice);
+}
 
-    document.querySelector("#cart-total").innerHTML = totalPrice;
+var button = document.getElementsByClassName("buyButton");
 
+for (var i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", function() {
+        var price = parseInt(this.getAttribute("data-price"));
+        var cart = document.querySelector("#cart-contain");
+        var totalPrice = parseInt(document.querySelector("#cart-total").innerHTML, 10);
+
+        if (cart.style.display == "none") {
+            cart.style.display = "inline-block";
+        }
+        totalPrice = totalPrice + price;
+
+        document.querySelector("#cart-total").innerHTML = totalPrice;
+    });
 }
