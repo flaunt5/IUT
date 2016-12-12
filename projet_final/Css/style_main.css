@@ -50,6 +50,15 @@ html {
     text-align: center;
 }
 
+#logo {
+    float: left;
+    margin: 0 10px;
+    width: 180px;
+    height: 120px;
+    text-indent: -9999em;
+    background: transparent url(../Img/logo.png) no-repeat;
+}
+
 #header {
     width: 100%;
 }
